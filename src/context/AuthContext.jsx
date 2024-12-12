@@ -66,7 +66,7 @@ export function AuthProvider(props) {
                 // doc method takes 3 variables: db, collection named users (from firestore), and value we're looking for 
                 // in this case, we are looking for user id 
 
-                // First, we create a reference for the document (labelled json object). Then, we get the doc and we snapshot it
+                // First, we create a reference for the document (labeled json object). Then, we get the doc and we snapshot it
                 // to see if there is anything there 
                 const docRef = doc(db, 'users', user.uid)
                 const docSnap = await getDoc(docRef)
